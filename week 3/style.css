@@ -1,0 +1,26 @@
+h1 {
+  color: brown;
+}
+/* this is a universal selector */
+* {
+  color: darkmagenta;
+}
+.my-heading {
+  color: aquamarine;
+}
+.my-class {
+  color: maroon;
+  font-size: 2rem;
+}
+p > strong {
+  color: black;
+}
+article {
+  text-align: center;
+  border: 1px dashed red;
+  padding: 10px;
+}
+/* .padding-style{
+    padding: 10px;
+    border: 1px solid red;
+} */
