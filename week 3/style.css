@@ -1,5 +1,10 @@
 h1 {
   color: brown;
+  text-transform: uppercase;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 /* this is a universal selector */
 * {
