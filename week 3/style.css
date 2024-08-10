@@ -5,6 +5,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+  background-color: blanchedalmond;
 }
 /* this is a universal selector */
 * {
