@@ -1,0 +1,16 @@
+h1 {
+  font-size: large;
+  position: center;
+  font-family: Cambria;
+  background-color: rgb(245, 225, 219);
+}
+
+.my-class {
+  font-size: 50px;
+  text-align: center;
+}
+
+span {
+  color: brown;
+  font-weight: bold;
+}
