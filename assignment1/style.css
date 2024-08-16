@@ -3,6 +3,7 @@ h1 {
   position: center;
   font-family: Cambria;
   background-color: rgb(251, 237, 214);
+  width: 820px;
 }
 
 .my-class {
@@ -16,18 +17,21 @@ span {
 }
 
 .mainouter {
-  border: 2px solid rgb(225, 175, 175);
-  flex-direction: row;
+  border: 2px solid rgb(255, 255, 255);
+  flex-direction: column;
   justify-content: space-between;
-  display: flex;
+  width: 820px;
+  display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr 1fr;
 }
-.outer1 {
+#outer1 {
   border: 3px solid rgb(75, 45, 2);
   width: 400px;
   height: fit-content;
   gap: 5px;
   flex-direction: column;
+  display: flex;
   flex: 1;
 }
 
@@ -36,19 +40,19 @@ p {
   margin: 5px;
 }
 
-.ques1 {
+#ques1 {
   background-color: rgb(236, 211, 169);
   flex: 1;
 }
 
-.ques2 {
+#ques2 {
   background-color: rgb(236, 211, 169);
   flex: 1;
   line-height: 180%;
   list-style-type: circle;
 }
 
-.ques3 {
+#ques3 {
   background-color: rgb(236, 211, 169);
   flex: 1;
 }
@@ -58,10 +62,20 @@ p > strong {
   font-size: large;
 }
 
-.outer2 {
-  border: 3px solid red;
+#outer2 {
+  border: 3px solid rgb(75, 42, 5);
   width: 400px;
   height: fit-content;
   flex-direction: column;
   display: flex;
+}
+
+#ques4 {
+  background-color: blanchedalmond;
+  flex: 1;
+}
+
+#ques5 {
+  background-color: blanchedalmond;
+  flex: 1;
 }
