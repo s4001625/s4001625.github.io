@@ -2,7 +2,7 @@ h1 {
   font-size: large;
   position: center;
   font-family: Cambria;
-  background-color: rgb(245, 225, 219);
+  background-color: rgb(251, 237, 214);
 }
 
 .my-class {
@@ -11,6 +11,41 @@ h1 {
 }
 
 span {
-  color: brown;
+  color: rgb(145, 109, 9);
   font-weight: bold;
+}
+
+.outer1 {
+  border: 3px solid rgb(75, 45, 2);
+  width: 400px;
+  height: fit-content;
+  gap: 5px;
+  flex-direction: column;
+  display: flex;
+}
+
+p {
+  padding: 15px;
+}
+
+.ques1 {
+  background-color: rgb(236, 211, 169);
+  flex: 1;
+}
+
+.ques2 {
+  background-color: rgb(236, 211, 169);
+  flex: 1;
+  line-height: 180%;
+  list-style-type: circle;
+}
+
+.ques3 {
+  background-color: rgb(236, 211, 169);
+  flex: 1;
+}
+
+p > strong {
+  font-weight: bold;
+  font-size: large;
 }
