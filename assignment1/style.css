@@ -7,6 +7,7 @@ main {
   width: 900px;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 20px;
 }
 
 header {
@@ -45,21 +46,23 @@ p {
   margin: 5px;
 }
 
-.question1,
+.question1 {
+  background-color: rgb(243, 199, 123);
+  flex: 1;
+  margin: 6px;
+  display: block;
+  padding: 16px;
+}
 .answer1 {
   background-color: rgb(236, 211, 169);
   flex: 1;
-  margin: 5px;
+  margin: 6px;
   display: block;
-  padding: 15px;
+  padding: 20px;
+  list
 }
 
 p > strong {
   font-weight: bold;
   font-size: large;
-}
-
-.answer2 {
-  background-color: rgb(236, 211, 169);
-  list-style-type: circle;
 }
