@@ -3,10 +3,9 @@ main {
   display: flex;
   gap: 10px;
   flex-direction: row;
-  color: rgb(75, 45, 2);
-  width: 900px;
+  color: rgb(49, 44, 32);
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-bottom: 20px;
 }
 
@@ -15,7 +14,6 @@ header {
   font-family: Cambria;
   font-size: large;
   font-weight: bold;
-  width: 900px;
 }
 
 h1 {
@@ -47,22 +45,42 @@ p {
 }
 
 .question1 {
-  background-color: rgb(243, 199, 123);
+  background-color: rgb(174, 160, 136);
   flex: 1;
   margin: 6px;
   display: block;
   padding: 16px;
 }
 .answer1 {
-  background-color: rgb(236, 211, 169);
+  background-color: rgb(231, 220, 203);
   flex: 1;
   margin: 6px;
   display: block;
   padding: 20px;
-  list
 }
 
 p > strong {
   font-weight: bold;
   font-size: large;
+}
+
+.image1 {
+  width: 700px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.question2 {
+  background-color: rgb(146, 195, 210);
+  flex: 1;
+  margin: 6px;
+  display: block;
+  padding: 16px;
+}
+.answer2 {
+  background-color: rgb(210, 230, 237);
+  flex: 1;
+  margin: 6px;
+  display: block;
+  padding: 20px;
 }
