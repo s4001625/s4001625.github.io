@@ -1,3 +1,4 @@
+/*this is the style for main section. I added paddings for top and bottom, as well as gaps for each outer to make spaces and looks neater. */
 main {
   padding-top: 20px;
   display: flex;
@@ -8,7 +9,7 @@ main {
   justify-content: space-around;
   padding-bottom: 20px;
 }
-
+/*For the header, I made the font large and bold to make it pop out and bigger than the content. */
 header {
   background-color: rgb(247, 241, 221);
   font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +29,7 @@ h2 {
   font-size: 50px;
   text-align: center;
 }
-
+/*outer1 is the line box around the questions and answers. I made it column so that the questions can be at the top and answers at the bottom, make it easier to read.*/
 .outer1 {
   border: 3px solid rgb(75, 45, 2);
   width: 290px;
@@ -43,7 +44,7 @@ p {
   padding: 15px;
   margin: 5px;
 }
-
+/*for the first part of QnA section, I made the background color similar with the first image, put margin and padding for spacing. */
 .question1 {
   background-color: rgb(174, 160, 136);
   flex: 1;
@@ -64,13 +65,14 @@ p > strong {
   font-weight: bold;
   font-size: large;
 }
-
+/*i adjust the width of the image and add padding to make it neater and use space around to make a space between the pictures and the edge of the website. */
 .image1 {
   width: 700px;
   padding: 10px;
   justify-content: space-around;
 }
 
+/*the style for this part is similar, only changed the background color. */
 .question2 {
   background-color: rgb(146, 195, 210);
   flex: 1;
