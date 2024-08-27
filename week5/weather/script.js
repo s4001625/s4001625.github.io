@@ -8,9 +8,13 @@ function checkWeather() {
     outer.style.backgroundColor = "blue";
     console.log("it is burning hot");
   } else if (temp.value < 40 && temp.value >= 30) {
-    body.style.backgroundColor = "aqua";
+    body.style.backgroundColor = "limegreen";
     outer.style.backgroundColor = "peach";
-    console.log("it is a pleasant weather");
+    console.log("it is sunny and warm");
+  } else if (temp.value < 30 && temp.value >= 15) {
+    body.style.backgroundColor = "aqua";
+    outer.style.backgroundColor = "purple";
+    console.log("it is pleasant weather");
   } else {
     body.style.backgroundColor = "grey";
     outer.style.backgroundColor = "purple";
