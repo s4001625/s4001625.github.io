@@ -26,3 +26,34 @@ console.log("are you science student?", myStudentRecord.isItscience);
 
 const numberArray = [2, 4, 6, 8];
 console.log(numberArray[2]);
+myStudentRecord.isItscience = true;
+if (myStudentRecord.isItscience) {
+  console.log("sorry you're in the wrong class");
+} else {
+  console.log("Welcome to OART1013");
+}
+
+let myScore = 60;
+if (myScore >= 90) {
+  console.log("You scored a HD");
+} else if (myScore < 90 && myScore >= 70) {
+  console.log("You missed HD");
+} else if (myScore < 70 && myScore >= 50) {
+  console.log("You score a C");
+} else {
+  console.log("You score a P");
+}
+
+// == equal to
+// === equal value and equal type
+// != not equal
+// !== not equal value or not equal type
+// > greater than
+// < less than
+// >= greater than or equal to
+// <= less than or equal to
+
+// logical operator
+//&& and
+// || or
+// ! not
