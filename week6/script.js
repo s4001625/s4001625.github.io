@@ -28,7 +28,18 @@ function giveReport(score) {
 
 const myCat = document.querySelector("#my-cat");
 console.log(myCat);
-myCat.classList.add("round");
+// myCat.classList.add("round");
+
+function toggleMe() {
+  myCat.classList.toggle("round");
+}
+
+const header = document.querySelector("header");
+console.log(header.innerHTML);
+let personality = "boring";
+let doubt = "doubt";
+header.innerHTML += `<p class= "red-heading"> is ${personality}! </p>
+<p class= "blue-heading">do you have any ${doubt}? </p>`;
 
 // const para = document.querySelector("#question2");
 // console.log(para.textContent);
@@ -51,3 +62,7 @@ myCat.classList.add("round");
 
 // const allabcd = document.querySelectorAll(".abcd");
 // console.log(allabcd);
+
+notes;
+// innerhtml need to use back ticks (``)
+// (+=) append content while (=) replace it.
