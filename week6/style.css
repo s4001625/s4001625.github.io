@@ -44,3 +44,19 @@ input {
   font-size: 1.4rem;
   color: crimson;
 }
+
+.red-heading {
+  color: red;
+}
+
+.blue-heading {
+  color: blue;
+}
+
+.round {
+  border-radius: 50pc;
+}
+
+img {
+  border: 1px solid coral;
+}

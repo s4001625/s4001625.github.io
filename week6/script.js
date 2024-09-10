@@ -25,3 +25,29 @@ function giveReport(score) {
     report.textContent = "you got D";
   }
 }
+
+const myCat = document.querySelector("#my-cat");
+console.log(myCat);
+myCat.classList.add("round");
+
+// const para = document.querySelector("#question2");
+// console.log(para.textContent);
+// para.textContent = "what is your as2 score?";
+// para.classList.add("red-heading");
+
+// const allPara = document.querySelectorAll("p");
+// console.log(allPara);
+
+// const heading = document.querySelector("h1");
+// console.log(heading.textContent);
+
+// heading.textContent = "new heading";
+// heading.classList.add("red-heading");
+// heading.classList.add("blue-heading");
+// heading.classList.remove("blue-heading");
+
+// const abcd = document.querySelector(".abcd");
+// console.log(abcd);
+
+// const allabcd = document.querySelectorAll(".abcd");
+// console.log(allabcd);
