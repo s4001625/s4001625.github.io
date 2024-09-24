@@ -8,12 +8,14 @@
 
 body,
 h1,
-p,
 ul {
   margin: 0;
   padding: 0;
 }
 
+p {
+  max-width: 450px;
+}
 h2 {
   font-weight: 100;
   font-size: 25px;
@@ -114,6 +116,20 @@ nav a {
   transition: width 0.3s ease;
 }
 
+.steps {
+  flex-direction: column;
+  margin: 20px;
+  row-gap: 20px;
+  justify-content: flex-end;
+  display: flex;
+  max-width: fit-content;
+}
+
+.steps button {
+  background-color: #fbe8d1;
+  border-radius: 5px;
+  padding: 8px;
+}
 /* Footer styling */
 footer {
   background-color: var(--main-bg-color);
