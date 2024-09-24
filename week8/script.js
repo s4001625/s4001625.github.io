@@ -95,3 +95,36 @@ function toggleFullScreen() {
     document.exitFullscreen();
   }
 }
+
+const videos = [
+  {
+    name: "zenscape",
+    src: "zenscape.mp4",
+  },
+  {
+    name: "stardust",
+    src: "stardust.mp4",
+  },
+];
+
+let currentIndex = 0;
+const videoName = document.querySelector("#video-name");
+
+const firstBtn = document.querySelector("#first-video-btn");
+console.log(firstBtn);
+firstBtn.addEventListener("click", function () {
+  chooseVideo(0); // 0 - first video
+});
+
+const secondBtn = document.querySelector("#second-video-btn");
+console.log(secondBtn);
+secondBtn.addEventListener("click", function () {
+  chooseVideo(1); // 1 - second video
+});
+
+function chooseVideo(no) {
+  myVideo.src = videos[no].src;
+  console.log(myVideo.src);
+  myVideo.load();
+  // myVideo.play();
+}
