@@ -83,3 +83,15 @@ function addLikes() {
   likeCount++;
   likes.textContent = likeCount;
 }
+
+myVideo.addEventListener("dblclick", toggleFullScreen);
+
+function toggleFullScreen() {
+  console.log("video is double clicked");
+  if (!document.fullscreenElement) {
+    // ! - not
+    myVideo.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
