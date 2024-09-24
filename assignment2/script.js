@@ -1,21 +1,49 @@
-const video = document.querySelector("#custom-video-player");
+const myVideo = document.querySelector("#custom-video-player");
+console.log(myVideo);
+
 const playPauseBtn = document.querySelector("#play-pause-btn");
+console.log(playPauseBtn);
 const playPauseImg = document.querySelector("#play-pause-img");
-const progressBar = document.querySelector("#progress-bar-fill");
-video.removeAttribute("controls");
-// playPauseBtn.addEventListener("click", togglePlayPause);
-video.addEventListener("timeupdate", updateProgressBar);
-function togglePlayPause() {
-  if (video.paused || video.ended) {
-    video.play();
+console.log(playPauseImg);
+
+playPauseBtn.addEventListener("click", togglePlay);
+
+function togglePlay() {
+  if (myVideo.paused || myVideo.ended) {
+    myVideo.play();
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
   } else {
-    video.pause();
+    myVideo.pause();
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
 }
-function updateProgressBar() {
-  const value = (video.currentTime / video.duration) * 100;
-  progressBar.style.width = value + "%";
+
+const muteUnmuteBtn = document.querySelector("#mute-unmute-btn");
+console.log(muteUnmuteBtn);
+
+muteUnmuteBtn.addEventListener("click", toggleSound);
+
+const muteUnmuteImg = document.querySelector("#mute-unmute-img");
+console.log(muteUnmuteImg);
+
+function toggleSound() {
+  if (myVideo.muted) {
+    myVideo.muted = false;
+    muteUnmuteImg.src =
+      "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
+  } else {
+    myVideo.muted = true;
+    muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
+  }
 }
-// Add other functionalities here
+
+const progressBar = document.querySelector("#progress-bar-fill");
+console.log(progressBar);
+
+myVideo.addEventListener("timeupdate", fillProgress);
+
+function fillProgress() {
+  const currentTime = myVideo.currentTime;
+  const progress = (currentTime / myVideo.duration) * 100;
+  progressBar.style.width = progress + "%";
+}

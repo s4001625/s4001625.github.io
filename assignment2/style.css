@@ -1,9 +1,9 @@
 :root {
   --primary-bg-color: #f4f4f4;
   --text-color: #333;
-  --main-bg-color: #333;
-  --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --main-bg-color: #efe0b9;
+  --main-text-color: #393509;
+  --main-btn-bg-color: #f8f8f3;
 }
 
 body,
@@ -14,6 +14,10 @@ ul {
   padding: 0;
 }
 
+h2 {
+  font-weight: 100;
+  font-size: 25px;
+}
 body {
   font-family: "Arial", sans-serif;
   background-color: var(--primary-bg-color);
@@ -25,11 +29,9 @@ body {
   justify-content: space-between;
 }
 
-/* Add additional styles as needed */
-
 /* Create a container for the main content */
 .container {
-  max-width: 1000px;
+  max-width: 1300px;
   width: 100%;
   padding: 10px;
 }
@@ -38,6 +40,8 @@ body {
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  font-family: Verdana, sans-serif;
+  font-size: 35px;
   padding: 15px 0;
   text-align: left;
   width: 100%;
@@ -45,7 +49,7 @@ header {
 
 /* Navigation styling */
 nav {
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -56,7 +60,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 nav a {
@@ -67,7 +71,7 @@ nav a {
 /* Media player styling */
 .media-player {
   width: 100%;
-  margin: 0 auto;
+  margin: 20px;
 }
 
 .media-player video {
@@ -76,7 +80,7 @@ nav a {
 
 .custom-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   margin-top: 10px;
@@ -84,7 +88,7 @@ nav a {
 }
 
 .custom-controls button {
-  background-color: var(--main-btn-bg-color);
+  background-color: #fbe8d1;
   color: var(--main-text-color);
   border: none;
   padding: 8px 12px;
@@ -95,9 +99,9 @@ nav a {
 }
 
 .progress-bar {
-  width: 100%;
-  height: 10px;
-  background-color: #ddd;
+  width: 22.5%;
+  height: 20px;
+  background-color: #e6e5e4;
   margin-top: 10px;
   overflow: hidden;
 }
@@ -105,7 +109,7 @@ nav a {
 .progress-bar span {
   display: block;
   height: 100%;
-  background-color: var(--main-bg-color);
+  background-color: rgb(246, 165, 37);
   width: 0;
   transition: width 0.3s ease;
 }
