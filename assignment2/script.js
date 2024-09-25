@@ -47,3 +47,15 @@ function fillProgress() {
   const progress = (currentTime / myVideo.duration) * 100;
   progressBar.style.width = progress + "%";
 }
+
+myVideo.addEventListener("dblclick", toggleFullScreen);
+
+function toggleFullScreen() {
+  console.log("video is double clicked");
+  if (!document.fullscreenElement) {
+    // ! - not
+    myVideo.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
