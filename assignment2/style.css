@@ -8,17 +8,15 @@
 
 body,
 h1,
+p,
 ul {
   margin: 0;
   padding: 0;
 }
 
-p {
-  max-width: 450px;
-}
 h2 {
-  font-weight: 100;
-  font-size: 25px;
+  font-size: 40px;
+  margin: 20px;
 }
 body {
   font-family: "Arial", sans-serif;
@@ -33,9 +31,12 @@ body {
 
 /* Create a container for the main content */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1300px;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Header styling */
@@ -45,7 +46,7 @@ header {
   font-family: Verdana, sans-serif;
   font-size: 35px;
   padding: 15px 0;
-  text-align: left;
+  text-align: justify;
   width: 100%;
 }
 
@@ -120,7 +121,6 @@ nav a {
   flex-direction: column;
   margin: 20px;
   row-gap: 20px;
-  justify-content: flex-end;
   display: flex;
   max-width: fit-content;
 }
@@ -129,6 +129,11 @@ nav a {
   background-color: #fbe8d1;
   border-radius: 5px;
   padding: 8px;
+}
+
+.para {
+  border: 0px dashed pink;
+  justify-items: start;
 }
 /* Footer styling */
 footer {
