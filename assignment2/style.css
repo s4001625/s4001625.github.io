@@ -121,7 +121,6 @@ nav a {
   margin: 10px;
   gap: 1rem;
   display: grid;
-  max-width: fit-content;
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
