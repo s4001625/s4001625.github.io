@@ -85,16 +85,130 @@ function toggleFullScreen() {
 
 function gotoStep1() {
   myVideo.currentTime = 14.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
 }
 
 function gotoStep2() {
   myVideo.currentTime = 30.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
 }
 
 function gotoStep3() {
   myVideo.currentTime = 41.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
 }
 
 function gotoStep4() {
   myVideo.currentTime = 63.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
+}
+
+function gotoStep5() {
+  myVideo.currentTime = 81.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
+}
+
+function gotoStep6() {
+  myVideo.currentTime = 127.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
+}
+
+function gotoStep7() {
+  myVideo.currentTime = 168.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
+}
+
+function gotoStep8() {
+  myVideo.currentTime = 205.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
+}
+
+function gotoStep9() {
+  myVideo.currentTime = 245.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
+}
+
+function gotoStep10() {
+  myVideo.currentTime = 270.1;
+  if (myVideo.paused) {
+    myVideo.paused = false;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    myVideo.paused = true;
+    myVideo.play();
+    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  }
 }
