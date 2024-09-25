@@ -59,3 +59,12 @@ function toggleFullScreen() {
     document.exitFullscreen();
   }
 }
+
+const step1Btn = document.querySelector("#step-1-btn");
+console.log(step1Btn);
+
+step1Btn.addEventListener("click", gotoStep1);
+
+function gotoStep1() {
+  myVideo.currentTime = 0.14;
+}
