@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
 }
 
-/* Create a container for the main content */
+/* The container is for the main content. Filled with video and the buttons as well. */
 .container {
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
   padding: 10px;
 }
 
-/* Header styling */
+/* For the header, I wanted to make the word at the left since most website usually put their logo either on the right or left.   */
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -50,7 +50,7 @@ header {
   width: 100%;
 }
 
-/* Navigation styling */
+/* The navigation is placed in the center so that people can be aware of the navigation and it's easier to click. */
 nav {
   margin-top: 5px;
   text-align: center;
@@ -71,7 +71,8 @@ nav a {
   color: var(--text-color);
 }
 
-/* Media player styling */
+/* For the media player, I placed the controls button under the video, with play pause button and mute unmute button included. 
+I also put a progress bar so that user can see the progress clearly. */
 .media-player {
   width: 100%;
   margin: 20px;
@@ -130,6 +131,7 @@ nav a {
   padding-bottom: 30px;
 }
 
+/* for the steps, I placed them in a grid to make it tidy and neat, but also in order so it's easier to read especially for kids.  */
 #steps {
   gap: 1rem;
   display: grid;
@@ -148,7 +150,7 @@ nav a {
   justify-items: start;
   align-items: left;
 }
-/* Footer styling */
+/* I styled the footer similar with the heading to have a constant style throughout the web. */
 footer {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
