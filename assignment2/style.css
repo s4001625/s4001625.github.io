@@ -75,10 +75,14 @@ nav a {
 .media-player {
   width: 100%;
   margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .media-player video {
   max-width: 100%;
+  width: 600px;
+  height: 100%;
 }
 
 .custom-controls {
@@ -117,11 +121,21 @@ nav a {
   transition: width 0.3s ease;
 }
 
+#right-container {
+  /* justify-content: center; */
+  /* align-items: center;  */
+  flex-direction: column;
+}
+
+#right-container p {
+  padding-bottom: 30px;
+}
+
 #steps {
-  margin: 10px;
+  /* margin: 10px; */
   gap: 1rem;
   display: grid;
-  padding: 10px;
+  /* padding: 10px; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   grid-template-rows: repeat(4, 1fr);
