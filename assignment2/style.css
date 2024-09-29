@@ -122,9 +122,8 @@ nav a {
 }
 
 #right-container {
-  /* justify-content: center; */
-  /* align-items: center;  */
   flex-direction: column;
+  align-content: center;
 }
 
 #right-container p {
@@ -132,12 +131,9 @@ nav a {
 }
 
 #steps {
-  /* margin: 10px; */
   gap: 1rem;
   display: grid;
-  /* padding: 10px; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   grid-template-rows: repeat(4, 1fr);
 }
 
@@ -150,6 +146,7 @@ nav a {
 .para {
   border: 0px dashed pink;
   justify-items: start;
+  align-items: left;
 }
 /* Footer styling */
 footer {
