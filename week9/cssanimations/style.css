@@ -52,9 +52,124 @@ button:hover {
 
 .duck-fill {
   cursor: pointer;
-  transition: fill 0.7s ease;
+  /* transition: fill 0.7s ease; */
+  /* animation-name: duck-wheel;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; */
+  animation: duck-wheel 5s linear infinite;
 }
 
 .duck-fill:hover {
   fill: blanchedalmond;
+}
+
+#box {
+  min-width: 100px;
+  min-height: 100px;
+  /* background-color: purple; */
+  background-color: rgb(54, 51, 40);
+  border: 3px dashed purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  animation-name: border-wheel;
+  animation-duration: 5s;
+  /* animation-iteration-count: 3; */
+  animation-timing-function: linear;
+}
+@keyframes border-wheel {
+  0% {
+    border-color: red;
+  }
+  20% {
+    border-color: purple;
+  }
+  40% {
+    border-color: blue;
+  }
+  60% {
+    border-color: pink;
+  }
+  80% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+@keyframes color-wheel {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: purple;
+  }
+  40% {
+    background-color: blue;
+  }
+  60% {
+    background-color: pink;
+  }
+  80% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes duck-wheel {
+  0% {
+    fill: red;
+  }
+  35% {
+    fill: goldenrod;
+  }
+  75% {
+    fill: green;
+  }
+  100% {
+    fill: blue;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid coral;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spinner 2s linear infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.duck-icon {
+  animation: bounce 5s linear infinite;
 }
