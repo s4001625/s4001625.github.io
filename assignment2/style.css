@@ -23,10 +23,10 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
 }
 
 /* The container is for the main content. Filled with video and the buttons as well. */
@@ -75,9 +75,13 @@ nav a {
 I also put a progress bar so that user can see the progress clearly. */
 .media-player {
   width: 100%;
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
+  /* margin: 20px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .media-player video {
@@ -107,7 +111,7 @@ I also put a progress bar so that user can see the progress clearly. */
 }
 
 .progress-bar {
-  width: 70%;
+  width: 78%;
   height: 20px;
   background-color: #e6e5e4;
   margin-top: 10px;
@@ -164,4 +168,10 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
+}
+
+.text-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
 }
