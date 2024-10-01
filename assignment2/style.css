@@ -107,7 +107,7 @@ I also put a progress bar so that user can see the progress clearly. */
 }
 
 .progress-bar {
-  width: 55%;
+  width: 70%;
   height: 20px;
   background-color: #e6e5e4;
   margin-top: 10px;
