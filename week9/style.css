@@ -49,3 +49,12 @@ button:hover {
   border-color: rgb(192, 131, 109);
   scale: 0.9;
 }
+
+.duck-fill {
+  cursor: pointer;
+  transition: fill 0.7s ease;
+}
+
+.duck-fill:hover {
+  fill: blanchedalmond;
+}
