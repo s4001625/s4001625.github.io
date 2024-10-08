@@ -107,3 +107,40 @@ footer {
 #profile-content.show {
   display: block;
 }
+
+/* ----- scroll styling ------- */
+#scroll-content {
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  border: 2px dashed #e5e5cb7a;
+}
+
+#long-text {
+  width: 700px;
+  height: 700px;
+}
+
+/* ----- slideshow styling ------- */
+
+.slides {
+  border: 2px dashed #e5e5cb7a;
+  font-size: 4rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slides-container {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+#navigation {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
