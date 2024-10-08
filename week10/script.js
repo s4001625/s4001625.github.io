@@ -30,3 +30,19 @@ function toggleMenu() {
   profileContent.classList.toggle("show");
 }
 // -----------------------------------------------------------------------
+
+// let us work on navigate action
+const bottomButton = document.querySelector("#bottom-button");
+console.log(bottomButton);
+bottomButton.addEventListener("click", gotoBottom);
+function gotoBottom() {
+  window.location.href = "#bottom";
+}
+
+const topButton = document.querySelector("#top-button");
+console.log(topButton);
+topButton.addEventListener("click", gotoTop);
+function gotoTop() {
+  window.location.href = "#top";
+}
+// ------------------------------------------------------------------------

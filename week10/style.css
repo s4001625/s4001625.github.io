@@ -16,6 +16,7 @@ body {
   color: #e5e5cb;
   /* color: #3c2a21; */
   font-size: 1.1rem;
+  gap: 20px;
 }
 
 .outer {
