@@ -100,3 +100,37 @@ const wvscroll = document.querySelector("#wvscroll");
 function getWVScroll() {
   wvscroll.textContent = window.scrollY;
 }
+// ------------------------------------------------------------------------
+
+// let us implement drag n drop
+const purpleBox = document.querySelector("#purple-box");
+console.log(purpleBox);
+const dropBox = document.querySelector("#drop-box");
+console.log(dropBox);
+
+let draggedElement = null;
+
+purpleBox.addEventListener("dragstart", startDrag);
+
+function startDrag() {
+  draggedElement = purpleBox;
+}
+
+dropBox.addEventListener("dragover", endDrag);
+function endDrag() {
+  event.preventDefault();
+}
+
+dropBox.addEventListener("drop", handleDrop);
+
+function handleDrop() {
+  if (draggedElement) {
+    const color = window
+      .getComputedStyle(draggedElement)
+      .getPropertyValue("background-color");
+    console.log(color);
+    dropBox.style.backgroundColor = color;
+    dropBox.textContent = "content dropped.";
+    draggedElement = null;
+  }
+}
