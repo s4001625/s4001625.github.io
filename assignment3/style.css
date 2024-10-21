@@ -1,0 +1,4 @@
+.bin {
+  display: flex;
+  flex-direction: column;
+}
