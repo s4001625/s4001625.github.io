@@ -4,24 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DRAG AND DROP</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="bin">
-      <img src="plasticlose.png" alt="plasticlose" id="plastic-close" />
-      <img src="paperclose.png" alt="paperclose" id="paper-close" />
+      <img src="plasticopen.png" alt="plasticopen" id="plastic-open" />
+      <img src="paperopen.png" alt="paperopen" id="paper-open" />
     </div>
     <div class="items">
-      <img src="crumpaper.png" alt="crumpaper" id="crump-paper" />
-      <img src="paperbag.png" alt="paperbag" id="paper-bag" />
-      <img src="plasticbag.png" alt="plasticbag" id="plastic-bag" />
-      <img src="plasticbottle.png" alt="plasticbottle" id="plastic-bottle" />
+      <img
+        src="crumpaper1.png"
+        alt="crumpaper1"
+        id="crump-paper1"
+        draggable="true"
+        class="draggable"
+        data-id="paper"
+      />
+      <img
+        src="crumpaper2.png"
+        alt="crumpaper2"
+        id="crump-paper2"
+        draggable="true"
+        class="draggable"
+        data-id="paper"
+      />
+      <img
+        src="paperbag.png"
+        alt="paperbag"
+        id="paper-bag"
+        draggable="true"
+        class="draggable"
+        data-id="paper"
+      />
+      <img
+        src="plasticbag.png"
+        alt="plasticbag"
+        id="plastic-bag"
+        draggable="true"
+        class="draggable"
+        data-id="plastic"
+      />
+      <img
+        src="plasticbottle.png"
+        alt="plasticbottle"
+        id="plastic-bottle"
+        draggable="true"
+        class="draggable"
+        data-id="plastic"
+      />
       <img
         src="plasticup.png"
         alt="plasticup"
         id="plastic-cup"
-        width="95px"
-        height="120px"
+        draggable="true"
+        class="draggable"
+        data-id="plastic"
       />
     </div>
   </body>

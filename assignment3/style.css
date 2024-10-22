@@ -8,30 +8,62 @@ body {
   position: relative;
 }
 
-/* .bin {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-} */
-
-img {
-  size: 5px;
-}
-
 .items {
   /* max-height: 100vh;
   max-width: 100vw; */
   position: relative;
 }
 
+#plastic-open {
+  position: fixed;
+  bottom: 0;
+  left: 1200px;
+}
+
+#paper-open {
+  position: fixed;
+  bottom: 0;
+  left: 1000px;
+}
+
 #plastic-bottle {
   position: fixed;
-  bottom: 24px;
-  left: 730px;
+  bottom: 40px;
+  left: 750px;
+  cursor: pointer;
 }
 
 #plastic-cup {
   position: fixed;
+  bottom: 30px;
+  left: 640px;
+  cursor: pointer;
+}
+
+#paper-bag {
+  position: fixed;
+  bottom: 65px;
+  left: 420px;
+  cursor: pointer;
+}
+
+#plastic-bag {
+  position: fixed;
   bottom: 50px;
-  left: 790px;
+  left: 830px;
+  cursor: pointer;
+}
+
+#crump-paper1 {
+  position: fixed;
+  bottom: 230px;
+  left: 750px;
+  cursor: pointer;
+}
+
+#crump-paper2 {
+  position: fixed;
+  bottom: 230px;
+  left: 650px;
+  cursor: pointer;
 }
