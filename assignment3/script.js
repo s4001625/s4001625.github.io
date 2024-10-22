@@ -27,8 +27,9 @@ for (let i = 0; i < dragItems.length; i++) {
     draggedElement = dragItems[i];
     // dragItems[i].style.display = "none";
   });
-  dragItems[i].addEventListener("dragend", function () {
-    dragItems[i].style.display = "none";
+  dragItems[i].addEventListener("dragenter", function (event) {
+    // dragItems[i].style.display = "none";
+    console.log(event.target);
   });
 }
 
@@ -56,13 +57,18 @@ function handlePaperDrop() {
     draggedElement.style.display = "none";
     draggedElement = null;
   } else {
-    alert("wrong bin");
+    // alert("wrong bin");
+    paperOpen.classList.add("binshake");
   }
 }
 
 function handlePlasticDrop() {
-  if (draggedElement) {
+  const category = draggedElement.getAttribute("data-id");
+  console.log(category);
+  if (draggedElement && category === "plastic") {
     draggedElement.style.display = "none";
     draggedElement = null;
+  } else {
+    alert("wrong bin");
   }
 }
