@@ -57,7 +57,6 @@ function handlePaperDrop() {
     draggedElement.style.display = "none";
     draggedElement = null;
   } else {
-    // alert("wrong bin");
     paperOpen.classList.add("binshake");
   }
 }
@@ -69,6 +68,6 @@ function handlePlasticDrop() {
     draggedElement.style.display = "none";
     draggedElement = null;
   } else {
-    alert("wrong bin");
+    paperOpen.classList.add("binshake");
   }
 }
