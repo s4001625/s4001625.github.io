@@ -12,12 +12,13 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #start-button {
-  padding: 9px;
+  padding: 15px;
   background-color: rgb(187, 216, 144);
   font-size: 30px;
   font-family: Verdana, Tahoma, sans-serif;
-  margin: 15px;
+  margin: 25px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 #start-button:hover {
