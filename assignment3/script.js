@@ -1,0 +1,18 @@
+const paperClose = document.querySelector("#paper-close");
+console.log(paperClose);
+const paperOpen = document.querySelector("#paper-open");
+console.log(paperOpen);
+const plastiClose = document.querySelector("#plastic-close");
+console.log(plastiClose);
+const plasticOpen = document.querySelector("#plastic-open");
+console.log(plasticOpen);
+const paperBag = document.querySelector("#paper-bag");
+console.log(paperBag);
+const crumPaper = document.querySelector("#crump-paper");
+console.log(crumPaper);
+const plastiCup = document.querySelector("#plastic-cup");
+console.log(plastiCup);
+const plasticBag = document.querySelector("#plastic-bag");
+console.log(plasticBag);
+const plasticBottle = document.querySelector("#plastic-bottle");
+console.log(plasticBottle);

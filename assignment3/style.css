@@ -1,4 +1,37 @@
-.bin {
+body {
+  background-image: url("livingroom.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  max-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* .bin {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
+} */
+
+img {
+  size: 5px;
+}
+
+.items {
+  /* max-height: 100vh;
+  max-width: 100vw; */
+  position: relative;
+}
+
+#plastic-bottle {
+  position: fixed;
+  bottom: 24px;
+  left: 730px;
+}
+
+#plastic-cup {
+  position: fixed;
+  bottom: 50px;
+  left: 790px;
 }
