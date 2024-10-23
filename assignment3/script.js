@@ -25,6 +25,8 @@ const dragItems = document.querySelectorAll(".draggable");
 for (let i = 0; i < dragItems.length; i++) {
   dragItems[i].addEventListener("dragstart", function () {
     draggedElement = dragItems[i];
+    paperOpen.classList.remove("binshake");
+    plasticOpen.classList.remove("binshake");
     // dragItems[i].style.display = "none";
   });
   dragItems[i].addEventListener("dragenter", function (event) {
@@ -68,6 +70,6 @@ function handlePlasticDrop() {
     draggedElement.style.display = "none";
     draggedElement = null;
   } else {
-    paperOpen.classList.add("binshake");
+    plasticOpen.classList.add("binshake");
   }
 }
