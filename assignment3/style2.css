@@ -21,6 +21,7 @@ p {
   border-radius: 10px;
 }
 
+/* to have that effect that the user want to click the button, I add hover effect so that it looks more like a button. */
 #start-button:hover {
   background-color: rgb(157, 181, 121);
 }

@@ -2,18 +2,16 @@ body {
   background-image: url("livingroom.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  /* display: flex; */
   max-height: 100vh;
   max-width: 100vw;
   position: relative;
 }
 
 .items {
-  /* max-height: 100vh;
-  max-width: 100vw; */
   position: relative;
 }
 
+/* since I wanted to object to be scattered and position according to the background, I need to make the position fixed and control the bottom and left space. */
 #plastic-open {
   position: fixed;
   bottom: 0;
@@ -68,6 +66,7 @@ body {
   cursor: pointer;
 }
 
+/* added the shake effect that shows that the object is drop into the wrong bin */
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -105,9 +104,6 @@ body {
 }
 
 .binshake {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
+  animation: shake 0.3s;
   animation-iteration-count: 2;
 }
